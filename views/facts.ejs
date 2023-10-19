@@ -1,45 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mohave:wght@300&family=Tilt+Neon&display=swap"
-      rel="stylesheet" />
-    <link rel="stylesheet" href="/stylesheets/main.css" type="text/css" />
-    <title>SSR</title>
-  </head>
-  <body>
-    <div class="container-text">
-      <h1 class="header-text">Here's how SSR works</h1>
-      <ol class="text">
-        <li>Client Requests a Page:</li>
-        <p class="text-smaller">
+<%- include('partials/header') %>
+<body class="bg-white flex flex-col items-center justify-start h-full text-gray-900">
+    <div class="container m-10">
+      <h1 class="text-5xl font-tilt mb-8 mt-8">Here's how SSR works</h1>
+      <ol class="font-mohave text-gray-700">
+        <li class="text-3xl mb-2 mt-2">1. Client Requests a Page:</li>
+        <p class="text-base">
           When a user requests a page from a website, the server receives the
           request.
         </p>
-        <li>Server Generates HTML</li>
-        <p class="text-smaller">
+        <li class="text-3xl mb-2 mt-2">2. Server Generates HTML</li>
+        <p class="text-base">
           Instead of sending a blank HTML file and relying on client-side
           JavaScript to populate it with content, the server generates the HTML
           on the server side. This includes rendering dynamic data, such as
           database queries or API calls.
         </p>
-        <li>HTML is Sent to the Client</li>
-        <p class="text-smaller">
+        <li class="text-3xl mb-2 mt-2">3. HTML is Sent to the Client</li>
+        <p class="text-base">
           The server sends the fully rendered HTML page to the client's web
           browser as the response to the request.
         </p>
-        <li>Client Receives and Displays HTML</li>
-        <p class="text-smaller">
+        <li class="text-3xl mb-2 mt-2">4. Client Receives and Displays HTML</li>
+        <p class="text-base">
           The client's browser receives the HTML and can immediately render and
           display the page. This is beneficial for performance, as users see
           content sooner, especially on the first page load.
         </p>
-        <li>Client-Side JavaScript Takes Over</li>
-        <p class="text-smaller">
+        <li class="text-3xl mb-2 mt-2">5. Client-Side JavaScript Takes Over</li>
+        <p class="text-base">
           Once the initial HTML is rendered, client-side JavaScript can take
           over to handle user interactions and make additional requests for
           dynamic content. This is often referred to as "hydration" because the
@@ -48,12 +36,10 @@
         </p>
       </ol>
     </div>
-    <div class="links-container">
-      <a href="/" class="link">What is SSR</a>
-      <a href="/for-against" class="link">Advantages & Trade-offs</a>
+    <div class="flex">
+      <a href="/" class="font-mohave text-white bg-indigo-700 text-lg py-2 px-4 rounded-full no-underline m-6 hover:bg-indigo-800">What is SSR</a>
+      <a href="/for-against" class="font-mohave text-white bg-indigo-700 text-lg py-2 px-4 rounded-full no-underline m-6 hover:bg-indigo-800">Advantages & Trade-offs</a>
     </div>
-    <footer class="footer">
-      This is just a small site made for educational purposes. Source: ChatGPT.
-    </footer>
+    <%- include('partials/footer') %>
   </body>
 </html>

@@ -18,6 +18,7 @@ class Server {
   configureMiddleware() {
     this.app.set("view engine", "ejs");
     this.app.set("views", path.join(__dirname, "views"));
+    this.app.set("partials", path.join(__dirname, "views/partials"));
   }
 
   configureRoutes() {
