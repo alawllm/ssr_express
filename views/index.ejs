@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mohave:wght@300&family=Tilt+Neon&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="/stylesheets/main.css" type="text/css" />
+    <title>This is the main site</title>
+  </head>
+  <body>
+    <h1 class="header"><%=message%></h1>
+    <div class="container-text">
+      <h2 class="header-text">SSR stands for Server-Side Rendering.</h2>
+      <p class="text">
+        It is a technique used in web development where a web server generates
+        HTML pages with content dynamically inserted before sending them to the
+        client's web browser. In SSR, the server is responsible for rendering
+        the initial HTML page, including the dynamic data, and then sending it
+        to the client.
+      </p>
+    </div>
+    <div class="links-container">
+      <a href="/facts" class="link">How SSR works</a>
+      <a href="/for-against" class="link">Advantages & Trade-offs</a>
+    </div>
+    <footer class="footer">
+      This is a small site made for educational purposes. Source: ChatGPT
+      (19.10.2023)
+    </footer>
+  </body>
+</html>

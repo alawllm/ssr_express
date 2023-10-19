@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mohave:wght@300&family=Tilt+Neon&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="/stylesheets/main.css" type="text/css" />
+    <title>Advantages, Tradeoffs</title>
+  </head>
+  <body>
+    <div class="container-text">
+      <h1 class="header-text">Advantages</h1>
+      <ul class="text">
+        <li>Faster Initial Page Load</li>
+        <p class="text-smaller">
+          Users see content more quickly since the server sends a fully rendered
+          HTML page.
+        </p>
+        <li>Improved SEO</li>
+        <p class="text-smaller">
+          Search engines can more easily crawl and index content because the
+          initial HTML is complete and contains the relevant information.
+        </p>
+        <li>Better Performance on Low-Powered Devices</li>
+        <p class="text-smaller">
+          Devices with limited processing power benefit from the server doing
+          more of the rendering work.
+        </p>
+      </ul>
+    </div>
+    <div class="container-text">
+      <h1 class="header-text">Disadvantages</h1>
+      <ul class="text">
+        <li>Server load</li>
+        <p class="text-smaller">
+          Generating HTML on the server can increase server load, especially for
+          complex pages or high traffic.
+        </p>
+        <li>Development complexity</li>
+        <p class="text-smaller">
+          Implementing SSR may add complexity to the development process, as
+          developers need to manage server-side rendering logic.
+        </p>
+      </ul>
+    </div>
+    <div class="links-container">
+      <a href="/" class="link">What is SSR</a>
+      <a href="/facts" class="link">How SSR works</a>
+    </div>
+    <footer class="footer">
+      This is a small site made for educational purposes. Source: ChatGPT
+      (19.10.2023)
+    </footer>
+  </body>
+</html>
